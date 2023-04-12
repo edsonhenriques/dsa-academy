@@ -1,0 +1,15 @@
+Usando apenas os modos de abertura de arquivos mostrados nesta aula (‘w’ e ‘r’) faça o seguinte:
+
+1 - Grave esta lista em um arquivo (Copie para o seu código para isso):
+	Gol
+	Uno
+	Palio
+	EcoSport
+	Clio
+	Strada
+	Golf
+2 - Inverta a ordem da lista e grave em um segundo arquivo.
+3 - Ordene a lista alfabeticamente em um terceiro arquivo.
+4 - Com a lista organizada faça a sua numeração em um quarto arquivo, assim:
+	1 - Clio
+	2 - EcoSport…
