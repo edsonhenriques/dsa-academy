@@ -1,20 +1,16 @@
 # Cursos da Data Science Academy
 
-Conteúdo dos cursos realizados na DSA incluindo material de apoio, pdf, resumos, scripts e projetos realizados nos cursos.
+O conteúdo do repositório "dsa-academy" está organizado em diferentes pastas, facilitando a navegação e o acesso ao material de estudo. Aqui está uma visão geral da estrutura:
 
-O repositório "dsa-academy" contém o conteúdo dos cursos realizados na Data Science Academy (DSA), incluindo material de apoio, PDF, resumos, scripts e projetos.
+## Estrutura do Repositório
 
-### Principais Pontos de Função
-Conteúdo dos cursos da DSA, incluindo material de apoio, PDF, resumos, scripts e projetos
+- ***ArquiteturaDeDados:*** Contém materiais relacionados à Pós Graduação de Arquitetura de Dados, incluindo conceitos e práticas.
+- ***DSA-Exercicios-master:*** Esta pasta contém exercícios práticos do curso de python da DSA.
+- ***Python_Fundamentos_DSA-master:*** Focado em fundamentos de Python, com códigos, exemplos e exercícios curso de python da DSA.
 
-### Organização do conteúdo em diferentes pastas:
-- ArquiteturaDeDados
-- DSA-Exercicios-master
-- Python_Fundamentos_DSA-master
-
-### Stack Tecnológico
-- Jupyter Notebook (92,9%)
-- HTML (6,4%)
-- Outros (0,7%)
-
+## Outros Componentes
+#### Material de Apoio:
+- PDFs e resumos que complementam o aprendizado dos cursos.
+- Scripts: Scripts de código que podem ser utilizados em projetos ou para prática.
+- Projetos: Exemplos de projetos que aplicam os conhecimentos adquiridos nos cursos.
 
