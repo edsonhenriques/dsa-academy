@@ -5,8 +5,8 @@ O conteúdo do repositório "dsa-academy" está organizado em diferentes pastas,
 ## Estrutura do Repositório
 
 - ***ArquiteturaDeDados:*** Contém materiais relacionados à Pós Graduação de Arquitetura de Dados, incluindo conceitos e práticas.
-- ***DSA-Exercicios-master:*** Esta pasta contém exercícios práticos para reforçar o aprendizado dos conceitos abordados do curso básico de python da DSA.
-- ***Python_Fundamentos_DSA-master:*** Focado em fundamentos de Python, com códigos, exemplos e exercícios para prática do curso de python da DSA.
+- ***DSA-Exercicios-master:*** Esta pasta contém exercícios práticos do curso de python da DSA.
+- ***Python_Fundamentos_DSA-master:*** Focado em fundamentos de Python, com códigos, exemplos e exercícios curso de python da DSA.
 
 ## Outros Componentes
 #### Material de Apoio:
