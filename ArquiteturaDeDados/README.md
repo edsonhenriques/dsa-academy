@@ -8,3 +8,7 @@ Repositório relacionado à Pós Graduação e Formação em Arquitetura de Dado
 
 ## Pontos Principais
 Disponibilização de PDFs, scripts de exercícios e resumos de tópicos principais como material de apoio. 
+
+
+## Mapa mental 
+![image](https://github.com/user-attachments/assets/0ceb9c89-a91e-4423-840f-8a2efce63e71)
