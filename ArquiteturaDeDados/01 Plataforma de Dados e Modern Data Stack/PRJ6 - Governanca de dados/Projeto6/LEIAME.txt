@@ -1,0 +1,21 @@
+# Projeto 6 - Implementação do Plano de Governança, Observabilidade, Qualidade e Segurança de Dados
+
+# Abra o terminal ou prompt de comando, navegue até a pasta raiz do Projeto e execute o comando abaixo para criar a imagem Docker:
+
+docker build -t image_dsa_p6 .
+
+# Execute o comando abaixo para criar o container:
+
+docker run -dit --name dsa_p6 -v ./modulos:/dsap6 image_dsa_p6
+
+# Dentro do container, configure as credenciais da AWS:
+
+aws configure
+
+# Execute o comando abaixo para alterar a permissão do arquivo e torná-lo executável:
+
+chmod +x dsa_governanca.sh
+
+# Execute o script de automação:
+
+./dsa_governanca.sh
