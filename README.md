@@ -1,6 +1,6 @@
 # Cursos da Data Science Academy
 
-O conteúdo do repositório "dsa-academy" está organizado em diferentes pastas, facilitando a navegação e o acesso ao material de estudo. Aqui está uma visão geral da estrutura:
+O repositório "dsa-academy" é um projeto que contém materiais de estudo relacionados a cursos da Data Science Academy (DSA). Ele está organizado em diferentes pastas, facilitando a navegação e o acesso ao conteúdo.
 
 ## Estrutura do Repositório
 
