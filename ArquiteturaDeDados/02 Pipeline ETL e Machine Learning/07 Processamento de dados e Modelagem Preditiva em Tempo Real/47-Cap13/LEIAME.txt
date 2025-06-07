@@ -1,0 +1,44 @@
+# Projeto 6 - Pipeline de Coleta, Transformação e Modelagem Preditiva em Tempo Real com Spark Streaming e TensorFlow
+
+# Abra o terminal ou prompt de comando e acesse a pasta onde estão os arquivos no seu computador
+
+# Execute o comando abaixo para criar e inicializar o Cluster
+
+docker compose -f docker-compose.yml up -d --scale spark-worker-dsa=2
+
+# Execute este comando no host para treinar e salvar o modelo e o padronizador
+
+docker exec spark-master-dsa spark-submit --deploy-mode client ./jobs/projeto6-pipe1.py
+
+NOTA: Depois de treinar o modelo pare o cluster Spark e inicialize novamente para liberar memória para o deploy!!!
+
+# Execute este comando dentro do node master para carregar um shell de dados em tempo real
+
+nc -lk 9999
+
+# Execute este comando no host para capturar dados em tempo real e entregar a previsão
+
+docker exec spark-master-dsa spark-submit --deploy-mode client ./jobs/projeto6-pipe2.py
+
+# De volta ao container, digite cada uma das linhas abaixo, pressione Enter e observe o modelo fazendo a previsão em tempo real
+# As linhas 2, 4 e 6 são anomalias
+
+{"id_sensor": "sensor_1", "timestamp": "2025-11-09T21:00:00Z", "nivelco2": 22.5, "nivelpm10": 45.0, "nivelmetano": 1013.0}
+{"id_sensor": "sensor_3", "timestamp": "2025-11-09T21:01:00Z", "nivelco2": 24.0, "nivelpm10": 150.0, "nivelmetano": 1013.2}
+{"id_sensor": "sensor_2", "timestamp": "2025-11-09T21:02:00Z", "nivelco2": 23.0, "nivelpm10": 50.0, "nivelmetano": 1012.5}
+{"id_sensor": "sensor_3", "timestamp": "2025-11-09T21:03:00Z", "nivelco2": 180.5, "nivelpm10": 98.0, "nivelmetano": 1013.2}
+{"id_sensor": "sensor_2", "timestamp": "2025-11-09T22:01:00Z", "nivelco2": 23.0, "nivelpm10": 50.0, "nivelmetano": 1014.5}
+{"id_sensor": "sensor_2", "timestamp": "2025-11-09T22:02:00Z", "nivelco2": 23.0, "nivelpm10": 50.0, "nivelmetano": 1.5}
+
+# Copie o banco de dados do container para o host
+
+docker cp spark-master-dsa:/opt/spark/modelos/dsadbp6.db .
+
+# Spark Master
+http://localhost:9090
+
+# History Server
+http://localhost:18080
+
+# Para desligar o Cluster
+docker compose -f docker-compose.yml down
