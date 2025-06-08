@@ -37,22 +37,22 @@ Ele surgiu como resposta às limitações das arquiteturas tradicionais (como da
 ### Principais Componentes (Camadas Típicas de um MDS):
 
 - **Ingestão e transporte:*** Ferramentas que automatizam a extração de dados de diversas fontes (bancos de dados, APIs, arquivos, SaaS) e os carregam diretamente para o destino central (geralmente um Data Warehouse ou Data Lakehouse na nuvem).  
-🔹***Ex:*** Apache Kafka, Apache Nifi, Fivetrans, Airbyte, Stitch.
+***Ex:*** Apache Kafka, Apache Nifi, Fivetrans, Airbyte, Stitch.
 
 - **Armazenamento, Data Warehouse e Data Lakehouse:** O repositório principal onde os dados são armazenados e organizados. As soluções modernas combinam a flexibilidade de um Data Lake com a estrutura e performance de um Data Warehouse.  
-🔹***Ex:*** AmazonS3, Azure Storage, Google Cloud Storage, Snowflake, Google BigQuery, Amazon Redshift, Databricks, Dremio.
+  ***Ex:*** AmazonS3, Azure Storage, Google Cloud Storage, Snowflake, Google BigQuery, Amazon Redshift, Databricks, Dremio.
 - **Transformação (ELT/ETL):** Ferramentas que permitem modelar, limpar e transformar os dados brutos carregados na camada de armazenamento, tornando-os prontos para análise. A abordagem ELT (em vez de ETL) é comum, onde a transformação acontece após o carregamento, aproveitando o poder computacional do Data Warehouse/Lakehouse.  
-🔹***Ex:*** dbt, (data build tool), Talend, Fivetran, Stitch.
+  ***Ex:*** dbt, (data build tool), Talend, Fivetran, Stitch.
 - **Business Intelligence (BI) e Analitycs:** Ferramentas para visualizar dados, criar dashboards, relatórios e realizar análises exploratórias.  
-🔹***Ex:*** Tableau, Looker, Power BI, Qlick Sense.
+  ***Ex:*** Tableau, Looker, Power BI, Qlick Sense.
 - **Ativação:** Ferramentas que levam os dados transformados de volta para as aplicações de negócio (Reverse ETL) ou servem dados para modelos de ML ou aplicações.  
-🔹***Ex:*** Census, Hightouch.
+  ***Ex:*** Census, Hightouch.
 - **Orquestração:** Ferramentas para agendar, monitorar e gerenciar os fluxos de trabalho (pipelines) de dados.  
-🔹***Ex:*** Apache Airflow, Prefect, Dagster, Luigi, Argo Workflows.
+  ***Ex:*** Apache Airflow, Prefect, Dagster, Luigi, Argo Workflows.
 - **Governança de dados:**  Ferramentas para gerenciar metadados, linhagem de dados, qualidade de dados, segurança e custos.  
-🔹***Ex:*** Open Metadata, Atlan, Alation, Monte Carlo, Great Expectations.
-- **Observabilidade:** Capacidade de medir e entender o estado interno de um sistema com base na análise de dados externos, como logs, métricas e rastreamento de transações.
-- 🔹***Ex:*** Prometheus, Grafana, Datadog, Splunk.
+  ***Ex:*** Open Metadata, Atlan, Alation, Monte Carlo, Great Expectations.
+- **Observabilidade:** Capacidade de medir e entender o estado interno de um sistema com base na análise de dados externos, como logs, métricas e rastreamento de transações.  
+  ***Ex:*** Prometheus, Grafana, Datadog, Splunk.
 
 
 ### Relação entre Plataforma de Dados e MDS:
