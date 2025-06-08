@@ -37,7 +37,8 @@ Ele surgiu como resposta às limitações das arquiteturas tradicionais (como da
 ### Principais Componentes (Camadas Típicas de um MDS):
 
 - **Ingestão e transporte:*** Ferramentas que automatizam a extração de dados de diversas fontes (bancos de dados, APIs, arquivos, SaaS) e os carregam diretamente para o destino central (geralmente um Data Warehouse ou Data Lakehouse na nuvem).  
-🔹***Ex:*** Apache Kafka, Apache Nifi, Fivetrans, Airbyte, Stitch. 
+🔹***Ex:*** Apache Kafka, Apache Nifi, Fivetrans, Airbyte, Stitch.
+
 - **Armazenamento, Data Warehouse e Data Lakehouse:** O repositório principal onde os dados são armazenados e organizados. As soluções modernas combinam a flexibilidade de um Data Lake com a estrutura e performance de um Data Warehouse.  
 🔹***Ex:*** AmazonS3, Azure Storage, Google Cloud Storage, Snowflake, Google BigQuery, Amazon Redshift, Databricks Lakehouse Platform, Dremio.
 - **Transformação (ELT/ETL):** Ferramentas que permitem modelar, limpar e transformar os dados brutos carregados na camada de armazenamento, tornando-os prontos para análise. A abordagem ELT (em vez de ETL) é comum, onde a transformação acontece após o carregamento, aproveitando o poder computacional do Data Warehouse/Lakehouse.  
