@@ -12,7 +12,7 @@
 - Arquitetura de plataofmra de dados e Modern Data Stack
 
 
-## Plataforma de Dados 
+## 📍 Plataforma de Dados 
 ### Definição:
 Uma Plataforma de Dados é um sistema integrado e centralizado projetado para gerenciar todo o ciclo de vida dos dados de uma organização. Isso inclui a ingestão, armazenamento, processamento, transformação, análise, governança e disponibilização de dados de diversas fontes para diferentes usuários e aplicações.
 
@@ -27,7 +27,7 @@ O objetivo principal de uma plataforma de dados é fornecer acesso confiável, e
 - **Suporte a Diversos Casos de Uso:** Deve atender necessidades de BI, Analytics, Data Science, aplicações, etc.
 
 
-## Modern Data Stack (MDS)
+## 🔅 Modern Data Stack (MDS)
 
 ### Definição:
 O Modern Data Stack (MDS) é uma arquitetura e um conjunto de ferramentas e tecnologias, geralmente baseadas em nuvem (SaaS - Software as a Service), que representam a abordagem contemporânea para construir uma Plataforma de Dados. Em vez de uma única solução monolítica, o MDS utiliza ferramentas "best-of-breed" (as melhores em sua categoria) e especializadas para cada etapa do pipeline de dados.
