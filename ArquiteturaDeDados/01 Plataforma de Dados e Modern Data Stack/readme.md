@@ -1,8 +1,8 @@
 # PLATAFORMA DE DADOS E MODERN DATA STACK
 
-📚 ### ***Pós Graduação de Arquitetura de Dados (DataScicence Academy)***
+### 🚀 ***Pós Graduação de Arquitetura de Dados (DataScicence Academy)***
 
-#### Conteúdo:
+#### Tabela de Conteúdo:
 - Fundamentos
 - Arquitetura de soluções BI e Data Science
 - Arquitetura de soluções de ML, IA Generativa e LLM
