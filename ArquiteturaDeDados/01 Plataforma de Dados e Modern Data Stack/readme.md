@@ -2,8 +2,7 @@
 
 📚 ### ***Pós Graduação de Arquitetura de Dados (DataScicence Academy)***
 
-:#### Conteúdo:
-
+#### Conteúdo:
 - Fundamentos:
 - Arquitetura de soluções BI e Data Science
 - Arquitetura de soluções de ML, IA Generativa e LLM
