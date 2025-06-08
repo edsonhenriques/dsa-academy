@@ -36,20 +36,20 @@ Ele surgiu como resposta às limitações das arquiteturas tradicionais (como da
 
 ### Principais Componentes (Camadas Típicas de um MDS):
 
-- **Ingestão/ELT (Extract, Load, Transform):*** Ferramentas que automatizam a extração de dados de diversas fontes (bancos de dados, APIs, arquivos, SaaS) e os carregam diretamente para o destino central (geralmente um Data Warehouse ou Data Lakehouse na nuvem), onde a transformação ocorre.
-***Exemplos:*** Fivetran, Airbyte, Stitch.
-- **Armazenamento Central (Data Warehouse / Data Lakehouse):** O repositório principal onde os dados são armazenados e organizados. As soluções modernas combinam a flexibilidade de um Data Lake com a estrutura e performance de um Data Warehouse.
-***Exemplos:*** Snowflake, Google BigQuery, Amazon Redshift, Databricks Lakehouse Platform.
-- **Transformação:** Ferramentas que permitem modelar, limpar e transformar os dados brutos carregados no armazenamento central, tornando-os prontos para análise. A abordagem ELT (em vez de ETL) é comum, onde a transformação acontece após o carregamento, aproveitando o poder computacional do Data Warehouse/Lakehouse.
-***Exemplos:*** dbt (data build tool).
-- **Business Intelligence (BI) e Análise:** Ferramentas para visualizar dados, criar dashboards, relatórios e realizar análises exploratórias.
-***Exemplos:*** Tableau, Looker, Power BI, Metabase.
-- **Orquestração:** Ferramentas para agendar, monitorar e gerenciar os fluxos de trabalho (pipelines) de dados.
-***Exemplos:*** Apache Airflow, Prefect, Dagster.
-- **Governança e Observabilidade:** Ferramentas para gerenciar metadados, linhagem de dados, qualidade de dados, segurança, custos e monitorar a saúde do pipeline.
-***Exemplos:*** Atlan, Alation, Monte Carlo, Great Expectations.
-- **Camada de Consumo/Ativação:** Ferramentas que levam os dados transformados de volta para as aplicações de negócio (Reverse ETL) ou servem dados para modelos de ML ou aplicações.
-***Exemplos:*** Census, Hightouch.
+- **Ingestão/ELT (Extract, Load, Transform):*** Ferramentas que automatizam a extração de dados de diversas fontes (bancos de dados, APIs, arquivos, SaaS) e os carregam diretamente para o destino central (geralmente um Data Warehouse ou Data Lakehouse na nuvem), onde a transformação ocorre.  
+🔹***Ex:*** Fivetran, Airbyte, Stitch.
+- **Armazenamento Central (Data Warehouse / Data Lakehouse):** O repositório principal onde os dados são armazenados e organizados. As soluções modernas combinam a flexibilidade de um Data Lake com a estrutura e performance de um Data Warehouse.  
+🔹***Ex:*** Snowflake, Google BigQuery, Amazon Redshift, Databricks Lakehouse Platform.
+- **Transformação:** Ferramentas que permitem modelar, limpar e transformar os dados brutos carregados no armazenamento central, tornando-os prontos para análise. A abordagem ELT (em vez de ETL) é comum, onde a transformação acontece após o carregamento, aproveitando o poder computacional do Data Warehouse/Lakehouse.  
+🔹***Ex:*** dbt (data build tool).
+- **Business Intelligence (BI) e Análise:** Ferramentas para visualizar dados, criar dashboards, relatórios e realizar análises exploratórias.  
+🔹***Ex:*** Tableau, Looker, Power BI, Metabase.
+- **Orquestração:** Ferramentas para agendar, monitorar e gerenciar os fluxos de trabalho (pipelines) de dados.  
+🔹***Ex:*** Apache Airflow, Prefect, Dagster.
+- **Governança e Observabilidade:** Ferramentas para gerenciar metadados, linhagem de dados, qualidade de dados, segurança, custos e monitorar a saúde do pipeline.  
+🔹***Ex:*** Atlan, Alation, Monte Carlo, Great Expectations.
+- **Camada de Consumo/Ativação:** Ferramentas que levam os dados transformados de volta para as aplicações de negócio (Reverse ETL) ou servem dados para modelos de ML ou aplicações.  
+🔹***Ex:*** Census, Hightouch.
 
 ### Relação entre Plataforma de Dados e MDS:
 
