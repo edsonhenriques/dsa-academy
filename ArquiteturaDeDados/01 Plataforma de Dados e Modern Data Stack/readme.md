@@ -13,6 +13,7 @@
 
 
 
+
 ## Plataforma de Dados 
 ### Definição:
 Uma Plataforma de Dados é um sistema integrado e centralizado projetado para gerenciar todo o ciclo de vida dos dados de uma organização. Isso inclui a ingestão, armazenamento, processamento, transformação, análise, governança e disponibilização de dados de diversas fontes para diferentes usuários e aplicações.
