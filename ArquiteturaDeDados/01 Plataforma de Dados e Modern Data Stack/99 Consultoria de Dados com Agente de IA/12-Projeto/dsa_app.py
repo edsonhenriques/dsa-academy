@@ -23,6 +23,9 @@ load_dotenv()
 # Define a função que extrai dados históricos de uma ação com base no ticker e período especificado
 @st.cache_data
 def dsa_extrai_dados(ticker, period="6mo"):
+@st.cache_data(ttl=3600) # Caching Streamlit: guarda os dados por 1 hora (3600 segundos)
+#@st.cache_data
+def dsa_extrai_dados(ticker, period="4mo"):
 
     # Cria um objeto Ticker do Yahoo Finance para a ação especificada
     stock = yf.Ticker(ticker)
@@ -30,6 +33,7 @@ def dsa_extrai_dados(ticker, period="6mo"):
     # Obtém o histórico de preços da ação para o período definido
     hist = stock.history(period=period)
     
+    #time.sleep(5)
     # Reseta o índice do DataFrame para transformar a coluna de data em uma coluna normal
     hist.reset_index(inplace=True)
     
@@ -43,6 +47,7 @@ def dsa_plot_stock_price(hist, ticker):
     # O título do gráfico inclui o ticker da ação e o período de análise
     fig = px.line(hist, x="Date", y="Close", title=f"{ticker} Preços das Ações (Últimos 6 Meses)", markers=True)
     
+    #time.sleep(5)
     # Exibe o gráfico no Streamlit
     st.plotly_chart(fig)
 
@@ -52,6 +57,7 @@ def dsa_plot_candlestick(hist, ticker):
     # Cria um objeto Figure do Plotly para armazenar o gráfico
     fig = go.Figure(
 
+    #time.sleep(5)
         # Adiciona um gráfico de candlestick com os dados do histórico da ação
         data=[go.Candlestick(x=hist['Date'],        # Define as datas no eixo X
                              open=hist['Open'],     # Define os preços de abertura
@@ -62,6 +68,7 @@ def dsa_plot_candlestick(hist, ticker):
     
     # Atualiza o layout do gráfico, incluindo um título dinâmico com o ticker da ação
     fig.update_layout(title=f"{ticker} Candlestick Chart (Últimos 6 Meses)")
+    fig.update_layout(title=f"{ticker} Candlestick Chart (Últimos 4 Meses)")
     
     # Exibe o gráfico no Streamlit
     st.plotly_chart(fig)
@@ -69,6 +76,7 @@ def dsa_plot_candlestick(hist, ticker):
 # Define a função para plotar médias móveis com base no histórico fornecido
 def dsa_plot_media_movel(hist, ticker):
 
+    #time.sleep(5)
     # Calcula a Média Móvel Simples (SMA) de 20 períodos e adiciona ao DataFrame
     hist['SMA_20'] = hist['Close'].rolling(window=20).mean()
     
@@ -81,6 +89,7 @@ def dsa_plot_media_movel(hist, ticker):
                   x='Date', 
                   y=['Close', 'SMA_20', 'EMA_20'],
                   title=f"{ticker} Médias Móveis (Últimos 6 Meses)",  # Define o título do gráfico
+                  title=f"{ticker} Médias Móveis (Últimos 4 Meses)",  # Define o título do gráfico
                   labels={'value': 'Price (USD)', 'Date': 'Date'})    # Define os rótulos dos eixos
     
     # Exibe o gráfico no Streamlit
@@ -95,6 +104,7 @@ def dsa_plot_volume(hist, ticker):
                  x='Date', 
                  y='Volume', 
                  title=f"{ticker} Trading Volume (Últimos 6 Meses)")  # Define o título do gráfico
+                 title=f"{ticker} Trading Volume (Últimos 4 Meses)")  # Define o título do gráfico
     
     # Exibe o gráfico no Streamlit
     st.plotly_chart(fig)
