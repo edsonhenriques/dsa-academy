@@ -1,0 +1,5 @@
+Credentials:
+            Email: edsonhenriques@yahoo.com.br
+            Password: RvRwyeX7aUokfcoyFXJx4J13RBqEy1c9
+            Client-Id: f83d8ed4-87c0-4287-9633-29811443549a
+            Client-Secret: 4SyVtlfDiZAP0bMxaBmURfTYr9einMQX
