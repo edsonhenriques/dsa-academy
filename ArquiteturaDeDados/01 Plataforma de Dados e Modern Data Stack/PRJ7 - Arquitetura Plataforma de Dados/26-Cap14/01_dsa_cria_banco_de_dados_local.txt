@@ -5,3 +5,6 @@
 # Execute o comando abaixo no terminal ou prompt de comando para baixar a imagem e criar o container:
 
 docker run --name db-dsa-fonte -p 5435:5432 -e POSTGRES_USER=dbadmin -e POSTGRES_PASSWORD=dbadmin123 -e POSTGRES_DB=postgresDSADB -d postgres
+
+
+docker run -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin -d dpage/pgadmin4
